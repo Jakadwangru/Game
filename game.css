@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  justify-content: space-around;
+  padding-top: 25%;
+  font: 2rem;
+}
+#inp{
+  width: 100vw;
+  height: 7vh;
+  text-align: center;
+  color: black;
+  transition: 1.5s ease-in-out 2ms;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #00fffb, 0 0 50px #00fffb;
+  border: 0px solid transparent;
+  background-color: mintcream;
+}
+h1{
+  color:white;
+  transition: 1.3s ease-out;
+  text-shadow: 0 0 60px #00fffb,0 0 60px #00fffb;
+  
+}
+button{
+  border: 0px solid transparent;
+  border-radius: 10px;
+  width: 75%;
+  transition: 1.5s ease-out 1.2s;
+  height: 6vh;
+  font: 3rem;
+  box-shadow: 0 0 20px #00fffb , 0  0 20px #00fffb;
+}
+form{
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
