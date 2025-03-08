@@ -6,15 +6,17 @@ body{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
   justify-content: space-around;
-  padding-top: 25%;
+  /* padding-top: 15%; */
   font: 2rem;
 }
 #inp{
   width: 100vw;
+  animation-name: inp;
+  animation-delay: 3s;
   height: 7vh;
   text-align: center;
   color: black;
-  transition: 1.5s ease-in-out 2ms;
+  /* transition: 1.5s ease-in-out 2ms; */
   padding-bottom: 10px;
   border-radius: 10px;
   box-shadow: 0 0 50px #00fffb, 0 0 50px #00fffb;
@@ -23,20 +25,75 @@ body{
 }
 h1{
   color:white;
-  transition: 1.3s ease-out;
+  /* animation-name: btn; */
+  /* animation-duration: 7s; */
+  /* transition: 1.3s ease-out; */
+  animation-name: h1;
+  text-align: center;
+  animation-duration: 3s;
+  /* animation-iteration-count: 2, 1, 5; */
+
   text-shadow: 0 0 60px #00fffb,0 0 60px #00fffb;
   
 }
 button{
   border: 0px solid transparent;
   border-radius: 10px;
-  width: 75%;
-  transition: 1.5s ease-out 1.2s;
-  height: 6vh;
+  width: 100vw;
+  /* transition: 1.5s ease-out 1.2s; */
+  height: 10vh;
   font: 3rem;
+  
   box-shadow: 0 0 20px #00fffb , 0  0 20px #00fffb;
+  /* animation-name: btn; */
+  /* animation-duration: 2s; */
 }
 form{
   padding-top: 55px;
   padding-bottom: 40px;
 }
+:hover>button{
+  /* animation-duration: 3s; */
+  animation-name: btn;
+  /* animation-iteration-count: infinite; */ 
+  animation-duration: 5s;
+  animation-delay: 0s;
+  width: 70vw;
+}
+
+/* Tomorow there will be animation added in this webiste*/
+/* animatio */
+@keyframes btn{
+  from{
+    width: 100vw;
+    color: white;
+    /* text-align: center; */
+      }
+  to{
+    width: 70vw;
+    height: 10vh;
+    background-color: darkgray;
+  }
+}
+@keyframes h1{
+  from{
+    width: 10px;
+    color: black;
+    text-align: center;
+  }
+  to{
+    width: 100vw;
+    color: white;
+  }
+}
+@keyframes inp{
+    from { 
+      transform: translate3d(0, 0, 0);
+      width: 0vw;
+    }
+    to { 
+      transform: translate3d(0, 200px, 0);
+      width: 100vw;
+    }
+}
+
