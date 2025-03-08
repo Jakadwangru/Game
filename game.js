@@ -8,7 +8,7 @@ function Go() {
     // document.getElementsByClassName("display")[0].innerHTML = "<h1>YOU WON!!</h1>";
     alert("YOU Won!!")
   }
-  if (userInp=="Shaurya") {
+  if (userInp=="A3E7F2E9") {
     // alert("Hi sir this is Jarvis")
     window.location.href="https://jakadwangru.github.io/Jarvis"
   }
