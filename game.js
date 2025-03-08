@@ -1,13 +1,19 @@
 function Go() {
   // Tab to edit
   let userInp = document.getElementById("inp").value;
-  let rno = Math.random() * 10; // Generate a random number between 0 and 9
+  let rno = Math.random() * 0; // Generate a random number between 0 and 9
   let frno = Math.floor(rno);
   //console.log(frno)
-  document.getElementsByClassName("display")[0].innerHTML = "The Number is " + frno;
   if (parseInt(userInp) === frno) { // Convert user input to integer and compare
-    document.getElementsByClassName("display")[0].innerHTML = "YOU WON!!";
-  } else {
-    document.getElementsByClassName("display")[0].innerHTML = "YOU LOST";
+    // document.getElementsByClassName("display")[0].innerHTML = "<h1>YOU WON!!</h1>";
+    alert("YOU Won!!")
   }
+  if (userInp=="Shaurya") {
+    // alert("Hi sir this is Jarvis")
+    window.location.href="https://jakadwangru.github.io/Jarvis"
+  }
+  else {
+    document.getElementsByClassName("display")[0].innerHTML = "<h1>You lose</h1>";
+  }
+  document.getElementsByClassName("dis")[0].innerHTML = "<h1>The is the Number</h1>"+frno;
 }
